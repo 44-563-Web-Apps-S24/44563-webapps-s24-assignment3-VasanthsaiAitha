@@ -47,5 +47,20 @@
                 <th>Rona Jaffe</th>
             </tr>
         </table>
+        <hr>
+        <h2>Code display</h2>
+        <p>To find the difference between two arrays in JavaScript,<br>
+           you can iterate over one array using a for loop and check if each element exists in the other array using the indexOf() method.<br>
+           If an element is not found, it is added to the result array.</p>
+       <pre>
+           const difference = (a, b) => {
+               const s = new Set(b);
+               return a.filter(x => !s.has(x));
+             };
+             
+             difference([1, 2, 3], [1, 2, 4]);
+       </pre>
+
+      <a href="https://code.pieces.app/collections/javascript" >click here for code reference</a>
     </body>
 </html>
